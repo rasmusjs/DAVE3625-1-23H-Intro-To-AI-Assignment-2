@@ -2,8 +2,8 @@ import pickle
 import pandas as pd
 
 # Paths to model and polynomial features
-model = "model.sav"
-polynomial_features = "poly.sav"
+model = "TSLA-Poly-Reg.sav"
+polynomial_features = "TSLA-Poly-Features.sav"
 
 # Load the trained model and the polynomial features used to train the model
 model, polynomial_features = pickle.load(open(model, 'rb')), pickle.load(open(polynomial_features, 'rb'))
