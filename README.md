@@ -24,19 +24,27 @@ You can pick one of the following use cases:
    For updated csv file, please download the data from:
    https://finance.yahoo.com/quote/TSLA/history?p=TSLA
 
-We picked the stock predicting use case for TESLA, mainly because finance is a hobby of some of us. We chose regression
-algorithm because it matched our data best, since the data is continuous and not discrete. For predicting stock
-prices we first tried to use a polynomial regression algorithm with many degrees (6) but the mean squared error was
-really high, at over 500. Then we found a article why Autoregressive Integrated Moving Average was better for our spikey
-data, since we are using time series (Dhaduk, 2021). Some of the code is based on a "Time Series Analysis: ARIMA Models
-in Python".
+We picked the stock predicting use case for TESLA, mainly because finance is a hobby of some of us. We chose a regression algorithm because it matched our data best, since the data is continuous and not discrete. For predicting stock we wanted to use ARIMA (Auto-Regressive Integrated Moving Average) or SARAMAX (Seasonal Auto-Regressive Integrated Moving Average with eXogenous factors) but I could not get it to work (Yugesh, 2021) . The reason for theese models it their are ment for time series forecasting (Artley, 2022). 
 
-Source:
+Sources:
+
+Artley, Brendan, 2022
+
+[Time Series Forecasting with ARIMA , SARIMA and SARIMAX](https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6)
+
+
 
 Dhaduk, Hardikkumar, 2021
-Stock market forecasting using Time Series analysis With ARIMA model
-https://www.analyticsvidhya.com/blog/2021/07/stock-market-forecasting-using-time-series-analysis-with-arima-model/
+[Stock market forecasting using Time Series analysis With ARIMA model](https://www.analyticsvidhya.com/blog/2021/07/stock-market-forecasting-using-time-series-analysis-with-arima-model/)
+
+
+
 
 Awan, Abid Ali, 2023
-Time Series Analysis: ARIMA Models in Python
-https://www.kdnuggets.com/2023/08/times-series-analysis-arima-models-python.html
+[Time Series Analysis: ARIMA Models in Python - KDnuggets](https://www.kdnuggets.com/2023/08/times-series-analysis-arima-models-python.html)
+
+
+
+Verma, Yugesh, 2021
+
+[Complete Guide To SARIMAX in Python for Time Series Modeling](https://analyticsindiamag.com/complete-guide-to-sarimax-in-python-for-time-series-modeling/)
