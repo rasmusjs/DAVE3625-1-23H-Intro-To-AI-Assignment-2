@@ -1,5 +1,7 @@
 # Assignment 2: Machine Learning - Documentation
 
+## Made by Ole Kristian Håseth Rudjord (s354564), Jørgen Skontorp (s364516) og Rasmus Skramstad (s360619)
+
 Contents:
 See main.ipynb for to documentation of the code used to train the model.
 TSLA-Predicter.py is the program that uses the model to predict the stock price from a date given.
