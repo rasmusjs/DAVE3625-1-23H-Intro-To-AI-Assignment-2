@@ -4,11 +4,15 @@ Contents:
 See main.ipynb for to documentation of the code used to train the model.
 TSLA-Predicter.py is the program that uses the model to predict the stock price from a date given.
 
-We picked the stock predicting use case for TESLA, mainly because finance is a hobby of some of us. We chose a
-regression algorithm because it matched our data best, since the data is continuous and not discrete. For predicting
-stock we used ARIMA (Auto-Regressive Integrated Moving Average) (Yugesh, 2021) . The reason for these models it there is
+We picked the stock predicting use case, mainly because finance is a hobby of some of us. We chose a
+regression algorithm because it matched our data best, since the data is continuous and not discrete. For predicting the
+stock we used ARIMA (Auto-Regressive Integrated Moving Average) (Yugesh, 2021). The reason we chose ARIMA is that it is
 ment for time series forecasting, and we wanted a challenge (Artley, 2022). The data we trained on is from 2018 to
 October 29, 2023.
+
+For running the predictor, run the program and follow the prompt. The program will ask for a date, and then it will use
+the model to give a prediction on that valid date. If the date is in the dataset it will show you how off the prediction
+is.
 
 Sources:
 
